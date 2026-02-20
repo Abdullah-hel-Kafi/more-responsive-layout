@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive flex</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+           
+        }
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .items {
+            background-color: lightcoral;
+            padding: 20px;
+            width : 100px;
+        }
+        @media screen and (max-width: 576px) {
+            body {
+                background-color: lightgreen;
+            }
+            .container {
+                flex-direction: column;}
+                .items {
+                    width: 100%;
+                }
+        }
+    </style>
+</head>
+<body>
+    <h2>let's explore flexbox</h2>
+    <div class="container">
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse quis, iste nemo dolores architecto, maxime ea veniam, facere modi vel omnis magni hic commodi alias quae debitis delectus praesentium! Culpa, distinctio labore, iste magnam quo, odit optio harum cupiditate eligendi voluptate porro esse sapiente. Laudantium consequuntur cum et aperiam fugiat nulla officia doloribus beatae quis? Ad itaque tempore cupiditate.</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse quis, iste nemo dolores architecto, maxime ea veniam, facere modi vel omnis magni hic commodi alias quae debitis delectus praesentium! Culpa, distinctio labore, iste magnam quo, odit optio harum cupiditate eligendi voluptate porro esse sapiente. Laudantium consequuntur cum et aperiam fugiat nulla officia doloribus beatae quis? Ad itaque tempore cupiditate.</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="items">box-01</div>
+        <div class="items">box-02</div>
+        <div class="items">box-03</div>
+        <div class="items">box-04</div>
+        <div class="items">box-05</div>
+        <div class="items">box-06</div>
+        <div class="items">box-07</div>
+        <div class="items">box-08</div>
+        <div class="items">box-09</div>
+        <div class="items">box-10</div>
+        <div class="items">box-11</div>
+        <div class="items">box-12</div>
+        <div class="items">box-13</div>
+        <div class="items">box-14</div>
+        <div class="items">box-15</div>
+        <div class="items">box-16</div>
+        <div class="items">box-17</div>
+        <div class="items">box-18</div>
+        <div class="items">box-19</div>
+        <div class="items">box-20</div>
+    </div>
+</body>
+</html>
